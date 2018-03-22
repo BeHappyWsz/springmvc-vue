@@ -1,0 +1,228 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+body,html{
+	margin: 0;
+	padding: 0;
+}
+/**登录表单**/
+#index .loginbox{
+	width: 100%;
+	height: 100%;
+	background: rgb(100,100,100);
+}
+
+#index .loginbox .box{
+	width: 400px;
+	height: 100%;
+	padding: 30px 30px 30px 30px;
+	margin:  100px auto;
+	background: #fff
+}
+
+#index .loginbox .box h3{
+	text-align: center;
+}
+
+#index .loginbox .box input{
+	height: 50px;
+	width: 100%;
+	border: 1px solid red;
+	margin: 10px 0;
+	border-radius: 2px;
+}
+
+#index .loginbox .box input[type="button"]{
+	background: red;
+	color: #fff;
+	font-family: "微软雅黑";
+}
+
+/** 注册表单**/
+#index .registerbox{
+	width: 100%;
+	height: 100%;
+	background: rgb(100,100,100);
+}
+
+#index .registerbox .box{
+	width: 400px;
+	height: 450px;
+	padding: 30px 30px 30px 30px;
+	margin: 100px auto;
+	background: #fff;
+}
+
+#index .registerbox .box h3{
+	text-align: center;
+}
+
+#index .registerbox .box input{
+	height: 50px;
+	width: 100%;
+	border: 1px solid red;
+	margin: 10px 0;
+	border-radius: 2px;
+}
+
+#index .registerbox .box input[type="button"]{
+	background: red;
+	color: #fff;
+	font-family: "微软雅黑";
+}
+
+
+/** 展示页面**/
+#index .mainbox{
+	width: 100%;
+	height: 100%;
+	background: rgb(100,100,100);
+}
+#index .mainbox .box{
+	width: 800px;
+	height: 450px;
+	padding: 30px 30px 30px 30px;
+	margin: 100px auto;
+	background: #fff;
+}
+
+#index .mainbox .box h3{
+	text-align: center;
+}
+
+#index .mainbox .box .searchbar{
+	width: 800px;
+}
+#index .mainbox .box .searchbar .searchBtn{
+	background-color: gray;
+	border : none;
+	color: white;
+	text-align: center;
+	padding: 4px 10px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius:4px;
+}
+#index .mainbox .box .showList thead th{
+	width: 80px;
+	height: 30px;
+	background-color: rgb(156,186,95);
+	color: #fff;
+	border-bottom-width: 15;
+}
+#index .mainbox .box .showList td{
+	color: #000;
+}
+#index .mainbox .box .showList tr,#index .mainbox .box .showList th{
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(156,186,95);
+}
+#index .mainbox .box .showList td,#index .mainbox .box .showList th{
+	padding: 5px 10px;
+	font-size: 15px;
+	font-family: Verdana;
+	font-weight: bold;
+}
+#index .mainbox .box .showList .editBtn{
+	background-color: #8080ff;
+	border : none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 4px 2.7px;
+	display: inline-block;
+	font-size: 16px;
+	border-radius:4px;
+}
+
+/**分页 **/
+#index .mainbox . box .showList ul .pagination{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+#index .mainbox . box .showList ul .pagination li{
+    display: inline;
+}
+#index .mainbox . box .showList ul .pagination li a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+
+/** 更新表单**/
+#index .updatebox{
+	width: 100%;
+	height: 100%;
+	background: rgb(100,100,100);
+}
+
+#index .updatebox .box{
+	width: 400px;
+	height: 450px;
+	padding: 30px 30px 30px 30px;
+	margin: 100px auto;
+	background: #fff;
+}
+
+#index .updatebox .box h3{
+	text-align: center;
+}
+
+#index .updatebox .box input{
+	height: 50px;
+	width: 100%;
+	border: 1px solid red;
+	margin: 10px 0;
+	border-radius: 2px;
+}
+
+#index .updatebox .box input[type="button"]{
+	background: red;
+	color: #fff;
+	font-family: "微软雅黑";
+}
+
+/** 新增表单**/
+#index .addbox{
+	width: 100%;
+	height: 100%;
+	background: rgb(100,100,100);
+}
+
+#index .addbox .box{
+	width: 400px;
+	height: 450px;
+	padding: 30px 30px 30px 30px;
+	margin: 100px auto;
+	background: #fff;
+}
+
+#index .addbox .box h3{
+	text-align: center;
+}
+
+#index .addbox .box input{
+	height: 50px;
+	width: 100%;
+	border: 1px solid red;
+	margin: 10px 0;
+	border-radius: 2px;
+}
+
+#index .addbox .box input[type="button"]{
+	background: red;
+	color: #fff;
+	font-family: "微软雅黑";
+}

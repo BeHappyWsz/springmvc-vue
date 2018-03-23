@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import springmvc.common.Result;
+import springmvc.common.Utils;
 import springmvc.dao.UserDao;
 import springmvc.entity.User;
 import springmvc.service.UserService;
@@ -27,7 +28,7 @@ public class UserServiceImpl implements UserService{
 	}
 
 	public Result register(User user) {
-		List<User> flag = userDao.getUserByName(user.getUsername());
+		List<User> flag = userDao.getUserByName(Utils.reloadString(user.getUsername()));
 		if(flag.isEmpty()) {
 			userDao.addUser(user);
 			return new Result(true,"注册成功");
@@ -57,12 +58,12 @@ public class UserServiceImpl implements UserService{
 
 	public boolean updatePwd(String id, String password) {
 		User user = userDao.getUserById(id);
-		user.setPassword(password);
+		user.setPassword(Utils.reloadString(password));
 		return userDao.updateUser(user);
 	}
 
 	public List<User> getUserByName(String username) {
-		return userDao.getUserByName(username);
+		return userDao.getUserByName(Utils.reloadString(username));
 	}
 	
 }

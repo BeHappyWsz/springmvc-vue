@@ -110,7 +110,7 @@ public class FileUtils {
 			fw = new FileWriter(file,true);//默认追加每行数据
 			bw = new BufferedWriter(fw);
 			for(User u : user) {//遍历数据并写入txt文件
-				bw.write(u.getId()+" "+u.getEmail()+" "+u.getUsername()+" "+u.getPassword());
+				bw.write(u.getId()+" "+u.getEmail().trim().replace(" ", "")+" "+u.getUsername().trim().replace(" ", "")+" "+u.getPassword().trim().replace(" ", ""));
 				bw.newLine();
 			}
 			bw.flush();

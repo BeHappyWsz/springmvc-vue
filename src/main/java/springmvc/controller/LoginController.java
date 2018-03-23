@@ -30,7 +30,8 @@ public class LoginController {
 	public Result login(User user,HttpServletRequest request,HttpServletResponse response) {
 		User flag = userService.login(user);
 		if(null != flag) {
-			request.getSession().setAttribute("user", flag);
+			//true保证session如果为null则新建一个
+			request.getSession(true).setAttribute("user", flag);
 			request.setAttribute("userList", userService.getAllUser());
 			return new Result(true, flag);
 		}

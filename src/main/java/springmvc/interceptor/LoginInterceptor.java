@@ -26,7 +26,7 @@ public class LoginInterceptor implements HandlerInterceptor{
 		if(null == value) {
 			String url = request.getRequestURI();
 			String action = url.substring(url.lastIndexOf("/")+1);
-			if("login".equals(action)) {
+			if("login".equals(action) || "register".equals(action)) {
 				return true;
 			}else {
 				request.getRequestDispatcher("/error.jsp").forward(request, response);
